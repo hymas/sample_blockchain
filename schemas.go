@@ -50,7 +50,7 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }.
+                            },
 							 "deviceId": {
                                 "description": "deviceId",
                                 "type": "string"
@@ -213,7 +213,7 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }.
+                            },
 							 "deviceId": {
                                 "description": "deviceId",
                                 "type": "string"
@@ -322,7 +322,7 @@ var schemas = `
                                 "description": "overallstatus",
                                 "type": "string"
                             
-                            }.
+                            },
 							 "deviceId": {
                                 "description": "deviceId",
                                 "type": "string"
