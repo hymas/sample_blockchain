@@ -244,6 +244,7 @@ func (t *SimpleChaincode) readAssetSchemas(stub shim.ChaincodeStubInterface, arg
 // ************************************
 func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err error) {
     var assetID string // asset ID
+    var deviceId string // 
     var state AssetState = AssetState{} // The calling function is expecting an object of type AssetState
 
     if len(args) !=1 {
@@ -252,6 +253,7 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
     }
     jsonData:=args[0]
     assetID = ""
+    deviceId = ""    
     stateJSON := []byte(jsonData)
     err = json.Unmarshal(stateJSON, &stateIn)
     if err != nil {
@@ -259,6 +261,19 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
         return state, err
         // state is an empty instance of asset state
     }      
+    
+    if stateIn.deviceId !=nil { 
+        deviceId = strings.TrimSpace(*stateIn.deviceId)
+        if deviceId==""{
+            err = errors.New("deviceId not passed"+ fmt.Sprintf("%s\n", stateJSON) )
+            return state, err
+        }
+    } else {
+        err = errors.New("deviceId is mandatory in the input JSON data:" + fmt.Sprintf("%s\n", stateJSON))
+        return state, err
+    }    
+    
+    
     // was assetID present?
     // The nil check is required because the asset id is a pointer. 
     // If no value comes in from the json input string, the values are set to nil
