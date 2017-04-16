@@ -50,7 +50,12 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
+                            }.
+							 "deviceId": {
+                                "description": "deviceId",
+                                "type": "string"
                             }
+                            
                         },
                         "required": [
                             "assetID"
@@ -208,6 +213,10 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
+                            }.
+							 "deviceId": {
+                                "description": "deviceId",
+                                "type": "string"
                             }
                     },
                     "type": "object"
@@ -312,6 +321,11 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
+                            
+                            }.
+							 "deviceId": {
+                                "description": "deviceId",
+                                "type": "string"
                             }
                         },
                         "required": [
@@ -387,6 +401,11 @@ var schemas = `
                             },
 							 "overallstatus": {
                                 "description": "overallstatus",
+                                "type": "string"
+                            
+                             },
+							 "deviceId": {
+                                "description": "deviceId",
                                 "type": "string"
                             }
             },
