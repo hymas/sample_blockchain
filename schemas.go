@@ -474,6 +474,10 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
+                            },
+                            "deviceId": {
+                                "description": "deviceId",
+                                "type": "string"
                             }
             },
             "type": "object"
