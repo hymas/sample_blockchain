@@ -244,7 +244,7 @@ func (t *SimpleChaincode) readAssetSchemas(stub shim.ChaincodeStubInterface, arg
 // ************************************
 func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err error) {
     var assetID string // asset ID
-    //var deviceId string // 
+    var deviceId string  
     var state AssetState = AssetState{} // The calling function is expecting an object of type AssetState
 
     if len(args) !=1 {
@@ -253,7 +253,7 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
     }
     jsonData:=args[0]
     assetID = ""
-    //deviceId = ""    
+    deviceId = ""    
     stateJSON := []byte(jsonData)
     err = json.Unmarshal(stateJSON, &stateIn)
     if err != nil {
