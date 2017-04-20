@@ -67,7 +67,7 @@ type AssetState struct {
 	Ownername            	*string       `json:"ownername,omitempty"`
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
-	deviceId				*string		  `json:"deviceId,omitempty"`  // WJH
+	DeviceID				*string		  `json:"deviceID,omitempty"`  // WJH
 }
 var contractState = ContractState{MYVERSION}
 
@@ -244,7 +244,7 @@ func (t *SimpleChaincode) readAssetSchemas(stub shim.ChaincodeStubInterface, arg
 // ************************************
 func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err error) {
     var assetID string // asset ID
-    var deviceId string  
+    var deviceID string  
     var state AssetState = AssetState{} // The calling function is expecting an object of type AssetState
 
     if len(args) !=1 {
@@ -253,7 +253,7 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
     }
     jsonData:=args[0]
     assetID = ""
-    deviceId = ""    
+    deviceID = ""    
     stateJSON := []byte(jsonData)
     err = json.Unmarshal(stateJSON, &stateIn)
     if err != nil {
@@ -262,9 +262,9 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
         // state is an empty instance of asset state
     }      
     
-    if stateIn.deviceId !=nil { 
-        deviceId = strings.TrimSpace(*stateIn.deviceId)
-        if deviceId==""{
+    if stateIn.DeviceID !=nil { 
+        deviceID = strings.TrimSpace(*stateIn.DeviceID)
+        if deviceID==""{
             err = errors.New("deviceId not passed"+ fmt.Sprintf("%s\n", stateJSON) )
             return state, err
         }

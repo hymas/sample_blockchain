@@ -51,8 +51,8 @@ var schemas = `
                                 "description": "overallstatus",
                                 "type": "string"
                             },
-							 "deviceId": {
-                                "description": "deviceId",
+							 "deviceID": {
+                                "description": "deviceID",
                                 "type": "string"
                             }
                             
@@ -214,8 +214,8 @@ var schemas = `
                                 "description": "overallstatus",
                                 "type": "string"
                             },
-							 "deviceId": {
-                                "description": "deviceId",
+							 "deviceID": {
+                                "description": "deviceID",
                                 "type": "string"
                             }
                     },
@@ -323,8 +323,8 @@ var schemas = `
                                 "type": "string"
                             
                             },
-							 "deviceId": {
-                                "description": "deviceId",
+							 "deviceID": {
+                                "description": "deviceID",
                                 "type": "string"
                             }
                         },
@@ -404,8 +404,8 @@ var schemas = `
                                 "type": "string"
                             
                              },
-							 "deviceId": {
-                                "description": "deviceId",
+							 "deviceID": {
+                                "description": "deviceID",
                                 "type": "string"
                             }
             },
@@ -475,8 +475,8 @@ var schemas = `
                                 "description": "overallstatus",
                                 "type": "string"
                             },
-                            "deviceId": {
-                                "description": "deviceId",
+                            "deviceID": {
+                                "description": "deviceID",
                                 "type": "string"
                             }
             },
