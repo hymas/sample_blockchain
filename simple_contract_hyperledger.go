@@ -262,8 +262,6 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
         // state is an empty instance of asset state
     }      
     
-    
-    /*
     if stateIn.deviceId !=nil { 
         deviceId = strings.TrimSpace(*stateIn.deviceId)
         if deviceId==""{
@@ -273,8 +271,7 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
     } else {
         err = errors.New("deviceId is mandatory in the input JSON data:" + fmt.Sprintf("%s\n", stateJSON))
         return state, err
-    } 
-    */   
+    }    
     
     // was assetID present?
     // The nil check is required because the asset id is a pointer. 
