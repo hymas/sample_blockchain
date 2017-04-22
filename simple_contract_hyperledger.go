@@ -68,11 +68,9 @@ type AssetState struct {
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
 	
-	Gyro_x					*string			`json:"gyro_x,omitempty"`
-	
 	// WJH
-	/*
-		
+	
+	Gyro_x					*string			`json:"gyro_x,omitempty"`
 	Ambient_temp			*string			`json:"ambient_temp,omitempty"`
 	Gyro_y					*string			`json:"gyro_y,omitempty"`
 	Gyro_z					*string			`json:"gyro_z,omitempty"`
@@ -90,8 +88,9 @@ type AssetState struct {
 	DeviceType				*string			`json:"deviceType,omitempty"`
 	EventType				*string			`json:"eventType,omitempty"`
 	Format					*string			`json:"format,omitempty"`
-	_msgid					*string			`json:"_msgid,omitempty"`		
-	*/
+	
+	// _msgid					*string			`json:"_msgid,omitempty"`		
+	
 }
 var contractState = ContractState{MYVERSION}
 
