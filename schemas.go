@@ -31,26 +31,30 @@ var schemas = `
                                 },
                                 "type": "object"
                             },
-							 "role": {
+							"role": {
                                 "description": "person role",
                                 "type": "string"
                             },
-							 "lastowner": {
+							"lastowner": {
                                 "description": "lastowner name",
                                 "type": "string"
                             },
-							 "ownername": {
+							"ownername": {
                                 "description": "ownername",
                                 "type": "string"
                             },
-							 "ownerid": {
+							"ownerid": {
                                 "description": "ownerid",
                                 "type": "string"
                             },
-							 "overallstatus": {
+							"overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+                            "gyro_x": {
+			                    "description": "overallstatus",
+			                    "type": "string"
+			                }
                         },
                         "required": [
                             "assetID"
@@ -190,25 +194,30 @@ var schemas = `
                             },
                             "type": "object"
                         },
-							 "role": {
-                                "description": "person role",
-                                "type": "string"
-                            },"lastowner": {
-                                "description": "lastowner name",
-                                "type": "string"
-                            },
-							 "ownername": {
-                                "description": "ownername",
-                                "type": "string"
-                            },
-							 "ownerid": {
-                                "description": "ownerid",
-                                "type": "string"
-                            },
-							 "overallstatus": {
-                                "description": "overallstatus",
-                                "type": "string"
-                            }
+						"role": {
+                            "description": "person role",
+                            "type": "string"
+                        },"lastowner": {
+                            "description": "lastowner name",
+                            "type": "string"
+                        },
+						"ownername": {
+                            "description": "ownername",
+                            "type": "string"
+                        },
+						"ownerid": {
+                            "description": "ownerid",
+                            "type": "string"
+                        },
+						"overallstatus": {
+                            "description": "overallstatus",
+                            "type": "string"
+                        },
+                        "gyro_x": {
+		                    "description": "overallstatus",
+		                    "type": "string"
+		                }
+                                                
                     },
                     "type": "object"
                 }
@@ -305,14 +314,18 @@ var schemas = `
                                 "description": "ownername",
                                 "type": "string"
                             },
-							 "ownerid": {
+							"ownerid": {
                                 "description": "ownerid",
                                 "type": "string"
                             },
-							 "overallstatus": {
+							"overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+                            "gyro_x": {
+			                    "description": "overallstatus",
+			                    "type": "string"
+			                }
                         },
                         "required": [
                             "assetID"
