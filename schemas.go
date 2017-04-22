@@ -53,13 +53,15 @@ var schemas = `
                             },
 
 							// WJH
+							
+							/*
 																		
 							"gyro_x": 		{	
 								"description": "gyro_x",
 								"type": "string"
 							}
 							
-							/*
+						
 							
 							"ambient_temp":	{	
 								"description": "ambient_temp",
@@ -296,14 +298,15 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            },
+                            }
                             
                             // WJH
-																		
+							/*											
 							"gyro_x": 		{	
 								"description": "gyro_x",
 								"type": "string"
 							}
+							*/
                             
                     },
                     "type": "object"
@@ -411,11 +414,12 @@ var schemas = `
                             },
                             
                             // WJH
-																		
+							/*											
 							"gyro_x": 		{	
 								"description": "gyro_x",
 								"type": "string"
 							}
+							*/
                             
                         },
                         "required": [
@@ -495,13 +499,13 @@ var schemas = `
                 },
                 
                 // WJH
-															
+				/*											
 				"gyro_x": 		{	
 					"description": "gyro_x",
 					"type": "string"
 				}
 				
-				/*
+				
 				
 				"ambient_temp":	{	
 					"description": "ambient_temp",
@@ -647,13 +651,15 @@ var schemas = `
                 },
 
 				// WJH
+				
+				/*
 															
 				"gyro_x": 		{	
 					"description": "gyro_x",
 					"type": "string"
 				}
 				
-				/*
+				
 				"ambient_temp":	{	
 					"description": "ambient_temp",
 					"type": "string"

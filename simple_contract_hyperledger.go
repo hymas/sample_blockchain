@@ -69,7 +69,7 @@ type AssetState struct {
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
 	
     // WJH
-    	
+    /*	
 	Gyro_x 					*string			`json:"gyro_x,omitempty"`	
 	Ambient_temp			*string			`json:"ambient_temp,omitempty"`
 	Gyro_y					*string			`json:"gyro_y,omitempty"`
@@ -89,6 +89,7 @@ type AssetState struct {
 	EventType				*string			`json:"eventType,omitempty"`
 	Format					*string			`json:"format,omitempty"`
 	_msgid					*string			`json:"_msgid,omitempty"`		
+	*/
 }
 var contractState = ContractState{MYVERSION}
 
