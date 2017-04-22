@@ -59,6 +59,8 @@ var schemas = `
 								"type": "string"
 							},
 							
+							/*
+							
 							"ambient_temp":	{	
 								"description": "ambient_temp",
 								"type": "string"
@@ -130,7 +132,8 @@ var schemas = `
 							"_msgid":		{	
 								"description": "_msgid",
 								"type": "string"
-							}                            
+							}
+							*/                            
                             
                             // end WJH   
 							
@@ -498,6 +501,8 @@ var schemas = `
 					"type": "string"
 				},
 				
+				/*
+				
 				"ambient_temp":	{	
 					"description": "ambient_temp",
 					"type": "string"
@@ -571,7 +576,7 @@ var schemas = `
 					"type": "string"
 				}                            
 				// WJH end
-				
+				*/
 				
             },
             "required": [
@@ -648,6 +653,7 @@ var schemas = `
 					"type": "string"
 				},
 				
+				/*
 				"ambient_temp":	{	
 					"description": "ambient_temp",
 					"type": "string"
@@ -719,7 +725,9 @@ var schemas = `
 				"_msgid":		{	
 					"description": "_msgid",
 					"type": "string"
-				}                                                                    
+				} 
+				*/                                                                   
+                  
                             
             },
             "type": "object"
