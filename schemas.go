@@ -57,7 +57,7 @@ var schemas = `
 							"gyro_x": 		{	
 								"description": "gyro_x",
 								"type": "string"
-							},
+							}
 							
 							/*
 							
@@ -499,7 +499,7 @@ var schemas = `
 				"gyro_x": 		{	
 					"description": "gyro_x",
 					"type": "string"
-				},
+				}
 				
 				/*
 				
@@ -651,7 +651,7 @@ var schemas = `
 				"gyro_x": 		{	
 					"description": "gyro_x",
 					"type": "string"
-				},
+				}
 				
 				/*
 				"ambient_temp":	{	
