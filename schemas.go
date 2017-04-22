@@ -50,7 +50,15 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+
+							// WJH
+																		
+							"gyro_x": 		{	
+								"description": "gyro_x",
+								"type": "string"
+							}                            
+                            
                         },
                         "required": [
                             "assetID"
@@ -208,7 +216,15 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+                            
+                            // WJH
+																		
+							"gyro_x": 		{	
+								"description": "gyro_x",
+								"type": "string"
+							}
+                            
                     },
                     "type": "object"
                 }
@@ -312,7 +328,15 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+                            
+                            // WJH
+																		
+							"gyro_x": 		{	
+								"description": "gyro_x",
+								"type": "string"
+							}
+                            
                         },
                         "required": [
                             "assetID"
@@ -388,7 +412,14 @@ var schemas = `
 							 "overallstatus": {
                                 "description": "overallstatus",
                                 "type": "string"
-                            }
+                            },
+                            
+                            // WJH
+																		
+							"gyro_x": 		{	
+								"description": "gyro_x",
+								"type": "string"
+							}
             },
             "required": [
                 "assetID"
@@ -436,26 +467,34 @@ var schemas = `
                     },
                     "type": "object"
                 },
-							 "role": {
-                                "description": "person role",
-                                "type": "string"
-                            },
-							"lastowner": {
-                                "description": "lastowner name",
-                                "type": "string"
-                            },
-							 "ownername": {
-                                "description": "ownername",
-                                "type": "string"
-                            },
-							 "ownerid": {
-                                "description": "ownerid",
-                                "type": "string"
-                            },
-							 "overallstatus": {
-                                "description": "overallstatus",
-                                "type": "string"
-                            }
+				"role": {
+                    "description": "person role",
+                    "type": "string"
+                },
+				"lastowner": {
+                    "description": "lastowner name",
+                    "type": "string"
+                },
+				 "ownername": {
+                    "description": "ownername",
+                    "type": "string"
+                },
+				 "ownerid": {
+                    "description": "ownerid",
+                    "type": "string"
+                },
+				 "overallstatus": {
+                    "description": "overallstatus",
+                    "type": "string"
+                },
+
+				// WJH
+															
+				"gyro_x": 		{	
+					"description": "gyro_x",
+					"type": "string"
+				}                                           
+                            
             },
             "type": "object"
         }
