@@ -436,26 +436,30 @@ var schemas = `
                     },
                     "type": "object"
                 },
-							 "role": {
-                                "description": "person role",
-                                "type": "string"
-                            },
-							"lastowner": {
-                                "description": "lastowner name",
-                                "type": "string"
-                            },
-							 "ownername": {
-                                "description": "ownername",
-                                "type": "string"
-                            },
-							 "ownerid": {
-                                "description": "ownerid",
-                                "type": "string"
-                            },
-							 "overallstatus": {
-                                "description": "overallstatus",
-                                "type": "string"
-                            }
+				"role": {
+                    "description": "person role",
+                    "type": "string"
+                },
+				"lastowner": {
+                    "description": "lastowner name",
+                    "type": "string"
+                },
+				"ownername": {
+                    "description": "ownername",
+                    "type": "string"
+                },
+				"ownerid": {
+                    "description": "ownerid",
+                    "type": "string"
+                },
+                "overallstatus": {
+                    "description": "overallstatus",
+                    "type": "string"
+                },
+                "gyro_x": {
+                    "description": "overallstatus",
+                    "type": "string"
+                }
             },
             "type": "object"
         }

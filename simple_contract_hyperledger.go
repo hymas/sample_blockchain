@@ -68,9 +68,11 @@ type AssetState struct {
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
 	
-    // WJH
-    /*	
-	Gyro_x 					*string			`json:"gyro_x,omitempty"`	
+	Gyro_x					*string			`json:"gyro_x,omitempty"`
+	
+	// WJH
+	/*
+		
 	Ambient_temp			*string			`json:"ambient_temp,omitempty"`
 	Gyro_y					*string			`json:"gyro_y,omitempty"`
 	Gyro_z					*string			`json:"gyro_z,omitempty"`
