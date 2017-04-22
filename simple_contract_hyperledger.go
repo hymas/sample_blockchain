@@ -67,7 +67,7 @@ type AssetState struct {
 	Ownername            	*string       `json:"ownername,omitempty"`
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
-	DeviceID				*string		  `json:"deviceID,omitempty"`  // WJH
+	DeviceID				*string		  `json:"deviceId,omitempty"`  // WJH
 }
 var contractState = ContractState{MYVERSION}
 
