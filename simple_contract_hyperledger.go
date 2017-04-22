@@ -71,6 +71,24 @@ type AssetState struct {
     // WJH
     	
 	Gyro_x 					*string			`json:"gyro_x,omitempty"`	
+	Ambient_temp			*string			`json:"ambient_temp,omitempty"`
+	Gyro_y					*string			`json:"gyro_y,omitempty"`
+	Gyro_z					*string			`json:"gyro_z,omitempty"`
+	Compass_x				*string			`json:"compass_x,omitempty"`
+	Object_temp				*string			`json:"object_temp,omitempty"`
+	Compass_y				*string			`json:"compass_y,omitempty"`
+	Compass_z				*string			`json:"compass_z,omitempty"`
+	Acc_z					*string			`json:"acc_z,omitempty"`
+	Humidity				*string			`json:"humidity,omitempty"`
+	Acc_y					*string			`json:"acc_y,omitempty"`
+	Acc_x					*string			`json:"acc_x,omitempty"`
+	Air_pressure			*string			`json:"air_pressure,omitempty"`
+	Light					*string			`json:"light,omitempty"`
+	DeviceId				*string			`json:"deviceId,omitempty"`
+	DeviceType				*string			`json:"deviceType,omitempty"`
+	EventType				*string			`json:"eventType,omitempty"`
+	Format					*string			`json:"format,omitempty"`
+	_msgid					*string			`json:"_msgid,omitempty"`		
 }
 var contractState = ContractState{MYVERSION}
 
