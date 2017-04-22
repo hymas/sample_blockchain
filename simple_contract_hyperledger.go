@@ -89,9 +89,7 @@ type AssetState struct {
 	EventType				*string			`json:"eventType,omitempty"`
 	Format					*string			`json:"format,omitempty"`
 	_msgid					*string			`json:"_msgid,omitempty"`	
-	
-	
-	
+		
 }
 var contractState = ContractState{MYVERSION}
 
