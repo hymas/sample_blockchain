@@ -67,29 +67,7 @@ type AssetState struct {
 	Ownername            	*string       `json:"ownername,omitempty"`
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
-
-    // WJH
-    	
-	Gyro_x 					*string			`json:"gyro_x,omitempty"`
-	Ambient_temp			*string			`json:"ambient_temp,omitempty"`
-	Gyro_y					*string			`json:"gyro_y,omitempty"`
-	Gyro_z					*string			`json:"gyro_z,omitempty"`
-	Compass_x				*string			`json:"compass_x,omitempty"`
-	Object_temp				*string			`json:"object_temp,omitempty"`
-	Compass_y				*string			`json:"compass_y,omitempty"`
-	Compass_z				*string			`json:"compass_z,omitempty"`
-	Acc_z					*string			`json:"acc_z,omitempty"`
-	Humidity				*string			`json:"humidity,omitempty"`
-	Acc_y					*string			`json:"acc_y,omitempty"`
-	Acc_x					*string			`json:"acc_x,omitempty"`
-	Air_pressure			*string			`json:"air_pressure,omitempty"`
-	Light					*string			`json:"light,omitempty"`
-	DeviceId				*string			`json:"deviceId,omitempty"`
-	DeviceType				*string			`json:"deviceType,omitempty"`
-	EventType				*string			`json:"eventType,omitempty"`
-	Format					*string			`json:"format,omitempty"`
-	_msgid					*string			`json:"_msgid,omitempty"`	
-		
+	
 }
 var contractState = ContractState{MYVERSION}
 
@@ -266,7 +244,6 @@ func (t *SimpleChaincode) readAssetSchemas(stub shim.ChaincodeStubInterface, arg
 // ************************************
 func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err error) {
     var assetID string // asset ID
-    var deviceID string  
     var state AssetState = AssetState{} // The calling function is expecting an object of type AssetState
 
     if len(args) !=1 {
@@ -275,7 +252,6 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
     }
     jsonData:=args[0]
     assetID = ""
-    deviceID = ""    
     stateJSON := []byte(jsonData)
     err = json.Unmarshal(stateJSON, &stateIn)
     if err != nil {
@@ -283,18 +259,6 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
         return state, err
         // state is an empty instance of asset state
     }      
-    
-    if stateIn.DeviceId !=nil { 
-        deviceID = strings.TrimSpace(*stateIn.DeviceId)
-        if deviceID==""{
-            err = errors.New("deviceId not passed"+ fmt.Sprintf("%s\n", stateJSON) )
-            return state, err
-        }
-    } else {
-        err = errors.New("deviceId is mandatory in the input JSON data:" + fmt.Sprintf("%s\n", stateJSON))
-        return state, err
-    }    
-    
     // was assetID present?
     // The nil check is required because the asset id is a pointer. 
     // If no value comes in from the json input string, the values are set to nil
