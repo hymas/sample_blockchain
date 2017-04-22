@@ -55,6 +55,74 @@ var schemas = `
 			                    "description": "overallstatus",
 			                    "type": "string"
 			                }
+			                "ambient_temp":	{	
+								"description": "ambient_temp",
+								"type": "string"
+							},
+							"gyro_y":		{	
+								"description": "gyro_y",
+								"type": "string"
+							},
+							"gyro_z":		{	
+								"description": "gyro_z",
+								"type": "string"
+							},
+							"compass_x":	{	
+								"description": "compass_x",
+								"type": "string"
+							},
+							"object_temp":	{	
+								"description": "object_temp",
+								"type": "string"
+							},
+							"compass_y":	{	
+								"description": "compass_y",
+								"type": "string"
+							},
+							"compass_z":	{	
+								"description": "compass_z",
+								"type": "string"
+							},
+							"acc_z":		{	
+								"description": "acc_z",
+								"type": "string"
+							},
+							"humidity":		{	
+								"description": "humidity",
+								"type": "string"
+							},
+							"acc_y":		{	
+								"description": "acc_y",
+								"type": "string"
+							},
+							"acc_x":		{	
+								"description": "acc_x",
+								"type": "string"
+							},
+							"air_pressure":	{	
+								"description": "air_pressure",
+								"type": "string"
+							},
+							"light":		{	
+								"description": "light",
+								"type": "string"
+							},
+							"deviceId":		{	
+								"description": "deviceId",
+								"type": "string"
+							},
+							"deviceType":	{	
+								"description": "deviceType",
+								"type": "string"
+							},
+							"eventType":	{	
+								"description": "eventType",
+								"type": "string"
+							},
+							"format":		{	
+								"description": "format",
+								"type": "string"
+							}
                         },
                         "required": [
                             "assetID"
@@ -216,7 +284,75 @@ var schemas = `
                         "gyro_x": {
 		                    "description": "overallstatus",
 		                    "type": "string"
-		                }
+		                },
+						"ambient_temp":	{	
+							"description": "ambient_temp",
+							"type": "string"
+						},
+						"gyro_y":		{	
+							"description": "gyro_y",
+							"type": "string"
+						},
+						"gyro_z":		{	
+							"description": "gyro_z",
+							"type": "string"
+						},
+						"compass_x":	{	
+							"description": "compass_x",
+							"type": "string"
+						},
+						"object_temp":	{	
+							"description": "object_temp",
+							"type": "string"
+						},
+						"compass_y":	{	
+							"description": "compass_y",
+							"type": "string"
+						},
+						"compass_z":	{	
+							"description": "compass_z",
+							"type": "string"
+						},
+						"acc_z":		{	
+							"description": "acc_z",
+							"type": "string"
+						},
+						"humidity":		{	
+							"description": "humidity",
+							"type": "string"
+						},
+						"acc_y":		{	
+							"description": "acc_y",
+							"type": "string"
+						},
+						"acc_x":		{	
+							"description": "acc_x",
+							"type": "string"
+						},
+						"air_pressure":	{	
+							"description": "air_pressure",
+							"type": "string"
+						},
+						"light":		{	
+							"description": "light",
+							"type": "string"
+						},
+						"deviceId":		{	
+							"description": "deviceId",
+							"type": "string"
+						},
+						"deviceType":	{	
+							"description": "deviceType",
+							"type": "string"
+						},
+						"eventType":	{	
+							"description": "eventType",
+							"type": "string"
+						},
+						"format":		{	
+							"description": "format",
+							"type": "string"
+						}
                                                 
                     },
                     "type": "object"
