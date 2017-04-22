@@ -67,7 +67,7 @@ type AssetState struct {
 	Ownername            	*string       `json:"ownername,omitempty"`
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
-	DeviceId				*string		  `json:"deviceId,omitempty"`  // WJH
+	deviceId				*string		  `json:"deviceId,omitempty"`  // WJH
 }
 var contractState = ContractState{MYVERSION}
 
@@ -262,8 +262,8 @@ func (t *SimpleChaincode) validateInput(args []string) (stateIn AssetState, err 
         // state is an empty instance of asset state
     }      
     
-    if stateIn.DeviceId !=nil { 
-        deviceID = strings.TrimSpace(*stateIn.DeviceId)
+    if stateIn.deviceId !=nil { 
+        deviceID = strings.TrimSpace(*stateIn.deviceId)
         if deviceID==""{
             err = errors.New("deviceId not passed"+ fmt.Sprintf("%s\n", stateJSON) )
             return state, err
