@@ -54,7 +54,7 @@ var schemas = `
                             "gyro_x": {
 			                    "description": "overallstatus",
 			                    "type": "string"
-			                }
+			                },
 			                "ambient_temp":	{	
 								"description": "ambient_temp",
 								"type": "string"
