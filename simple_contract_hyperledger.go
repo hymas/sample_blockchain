@@ -60,6 +60,8 @@ type Geolocation struct {
 }
 type AssetState struct {
     AssetID         		*string       `json:"assetID,omitempty"`        // all assets must have an ID, primary key of contract
+    
+   /* 
     Location        		*Geolocation  `json:"location,omitempty"`       // current asset location
     Status          		*string       `json:"assetstatus,omitempty"`        // the name of the carrier
 	Role            		*string       `json:"role,omitempty"`
@@ -67,7 +69,7 @@ type AssetState struct {
 	Ownername            	*string       `json:"ownername,omitempty"`
 	Ownerid            		*string       `json:"ownerid,omitempty"`
 	Overallstatus           *string       `json:"overallstatus,omitempty"`
-	
+	*/
 	// WJH
 	
 	Gyro_x					*string			`json:"gyro_x,omitempty"`
