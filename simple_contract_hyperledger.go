@@ -90,6 +90,9 @@ type AssetState struct {
 	DeviceType				*string			`json:"deviceType,omitempty"`
 	EventType				*string			`json:"eventType,omitempty"`
 	Format					*string			`json:"format,omitempty"`
+	City					*string			`json:"city,omitempty"`
+	Latitude				*string			`json:"latitude,omitempty`
+	Longitude				*string			`json:"longitude,omitempty`
 	
 	// _msgid					*string			`json:"_msgid,omitempty"`		
 	

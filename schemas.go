@@ -128,7 +128,17 @@ var schemas = `
 							"format":		{	
 								"description": "format",
 								"type": "string"
-							}
+							},
+							"city": {
+	                            "type": "string"
+                            },
+							"latitude": {
+								"type": "string"
+							},
+                            "longitude": {
+	                            "type": "string"
+                            }
+                            
                         },
                         "required": [
                             "assetID"
@@ -364,8 +374,16 @@ var schemas = `
 						"format":		{	
 							"description": "format",
 							"type": "string"
-						}
-                                                
+						},
+						"city": {   
+	                        "type": "string"
+                        },
+                  		"latitude": {
+							"type": "string"
+						},
+                        "longitude": {
+		                    "type": "string"
+                        }                                            
                     },
                     "type": "object"
                 }
@@ -548,7 +566,16 @@ var schemas = `
 							"format":		{	
 								"description": "format",
 								"type": "string"
-							}
+							},
+							"city": {
+	                            "type": "string"
+                            },
+							"latitude": {
+								"type": "string"
+							},
+                            "longitude": {
+	                            "type": "string"
+                            }
 			                			                
                         },
                         "required": [
@@ -703,7 +730,16 @@ var schemas = `
 				"format":		{	
 					"description": "format",
 					"type": "string"
-				}                                       
+				} ,
+				"city": {
+	                "type": "string"
+	            },
+				"latitude": {
+					"type": "string"
+				},
+                "longitude": {
+	                 "type": "string"
+                }                            
             },
             "required": [
                 "assetID"
@@ -848,7 +884,16 @@ var schemas = `
 				"format":		{	
 					"description": "format",
 					"type": "string"
-				}
+				},
+				"city": {
+					"type": "string"
+                },
+				"latitude": {
+					"type": "string"
+				},
+				"longitude": {
+	                "type": "string"
+                }
             },
             "type": "object"
         }
