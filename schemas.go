@@ -29,6 +29,7 @@ var schemas = `
                                         "type": "string"
                                     },
                                     "longitude": {
+                                    	"description": "longitude", 
                                         "type": "string"
                                     }
                                 },
@@ -130,14 +131,17 @@ var schemas = `
 								"type": "string"
 							},
 							"city": {
-	                            "type": "string"
-                            },
-							"latitude": {
+								"description": "city",
 								"type": "string"
 							},
-                            "longitude": {
-	                            "type": "string"
-                            }
+							"latitude": {
+								"description": "latitude", 
+								"type": "string"
+							},
+							"longitude": {
+								"description": "longitude", 
+								"type": "string"
+							}
                             
                         },
                         "required": [
@@ -375,15 +379,18 @@ var schemas = `
 							"description": "format",
 							"type": "string"
 						},
-						"city": {   
-	                        "type": "string"
-                        },
-                  		"latitude": {
+						"city": {  
+							"description": "city",
 							"type": "string"
 						},
-                        "longitude": {
-		                    "type": "string"
-                        }                                            
+						"latitude": {
+							"description": "latitude", 
+							"type": "string"
+						},
+						"longitude": {
+							"description": "longitude",
+							"type": "string"
+						}                                            
                     },
                     "type": "object"
                 }
@@ -568,14 +575,17 @@ var schemas = `
 								"type": "string"
 							},
 							"city": {
-	                            "type": "string"
-                            },
-							"latitude": {
+								"description": "city",
 								"type": "string"
 							},
-                            "longitude": {
-	                            "type": "string"
-                            }
+							"latitude": {
+								"description": "latitude", 
+								"type": "string"
+							},
+							"longitude": {
+								"description": "longitude", 
+								"type": "string"
+							}
 			                			                
                         },
                         "required": [
@@ -732,14 +742,17 @@ var schemas = `
 					"type": "string"
 				} ,
 				"city": {
-	                "type": "string"
-	            },
-				"latitude": {
+					"description": "city",
 					"type": "string"
 				},
-                "longitude": {
-	                 "type": "string"
-                }                            
+				"latitude": {
+					"description": "latitude", 
+					"type": "string"
+				},
+				"longitude": {
+					"description": "longitude",
+					"type": "string"
+				}                            
             },
             "required": [
                 "assetID"
@@ -886,14 +899,17 @@ var schemas = `
 					"type": "string"
 				},
 				"city": {
+					"description": "city", 
 					"type": "string"
-                },
+				},
 				"latitude": {
+					"description": "latitude", 
 					"type": "string"
 				},
 				"longitude": {
-	                "type": "string"
-                }
+					"description": "longitude", 
+					"type": "string"
+				}
             },
             "type": "object"
         }
